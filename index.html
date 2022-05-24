@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">RayHub Survey Form</h1>
+       <p id="description"> Thank you for taking the time to help us improve our services</p>
+    </div>   
+    <div id="form-div">
+       <form id ="survey-form">
+         <label for="fname" id="name-label" >First name:</label><br>
+         <input type="text" id="name"  required placeholder="Name"><br><br>
+         <label for="email" id="email-label">Email:</label><br>
+         <input type="email" id="email" required placeholder="Email"><br><br>
+         <label for="number" id="number-label">Number:</label><br>
+         <input type="number" id="number" min="1" max="11" placeholder="Number"><br><br>
+         <label for="cars">Sex</label><br>
+         <select name="cars" class="dropdown"  title="Search in">
+         <option value="volvo" id="volvo">Male</option>
+         <option value="benz">Female</option>
+         </select><br><br>
+         <label for="html">Would you recommend RayHub to a friend?</label><br><br>
+         <input type="radio" id="html-1" name="fav_language" value="HTML">
+         <label for="html" id="radio1">Definitely</label><br><br>
+          <input type="radio" id="css-1" name="fav_language" value="CSS">
+         <label for="css">Maybe</label><br><br>
+         <input type="radio" id="javascript-1" name="fav_language" value="JavaScript">
+          <label for="javascript">Not sure</label><br><br>
+          <label for="css">What is your favorite feature of RayHub?</label><br><br>
+         <input type="checkbox" id="html" name="fav_language" value="HTML">
+         <label for="html">HTML</label><br><br>
+         <input type="checkbox" id="css" name="fav_language" value="CSS">
+         <label for="css">CSS</label><br><br>
+         <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+         <label for="javascript">JavaScript</label><br><br>
+         <label for="w3review">Any comments or suggestions?</label><br>
+     
+         <textarea id="w3review" placeholder="Enter your comment here...">
+         </textarea><br><br>
+         <button type="submit" form="form1" onclick="testFunction()" class="submit">Submit</button>
+        </form>
+     </div>
+    </div> 
+    <div class="submit-button" id="sub">
+        <div class="text">THANK YOU !</div>
+        <button type="submit" class="submit-btn">Done</button>
+        <p>Created By ©2022 RayHub</p>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
+
